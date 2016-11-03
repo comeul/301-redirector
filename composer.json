@@ -1,0 +1,13 @@
+{
+    "name": "jpmurray/comeul-301-redirector",
+    "description": "A simple 301 redirector to use on our alternative domain names",
+    "authors": [
+        {
+            "name": "Jean-Philippe Murray",
+            "email": "jeanphilippe@pasunecompagnie.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^2.4"
+    }
+}
