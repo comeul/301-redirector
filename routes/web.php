@@ -11,6 +11,6 @@
 |
 */
 
-// Route::get('{any}', function () {
-//     return view('welcome');
-// })->where('any', '(.*)')->middleware('redirectTo');
+Route::get('{any}', function () {
+    return view('welcome');
+})->where('any', '(.*)')->middleware('redirectTo');
