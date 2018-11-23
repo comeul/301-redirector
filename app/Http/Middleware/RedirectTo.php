@@ -19,7 +19,7 @@ class RedirectTo
         $http_code = env('HTTP_CODE');
         $redirectTo = $request->path() == "/" ? $requestTo : $requestTo."/{$request->path()}";
         
-        return redirect()->secure($redirectTo, (int) $http_code);
+        return redirect()->secure($redirectTo, $http_code);
 
         // return $next($request);
     }
