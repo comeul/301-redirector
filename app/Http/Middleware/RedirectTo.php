@@ -16,9 +16,10 @@ class RedirectTo
     public function handle($request, Closure $next)
     {
         $requestTo = env('REDIRECT_TO');
+        $http_code = env('HTTP_CODE');
         $redirectTo = $request->path() == "/" ? $requestTo : $requestTo."/{$request->path()}";
         
-        return redirect()->secure($redirectTo, 301);
+        return redirect()->secure($redirectTo, $http_code);
 
         // return $next($request);
     }
